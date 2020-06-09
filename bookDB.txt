@@ -1,0 +1,101 @@
+create table member(
+  id varchar2(50) not null primary key,
+  passwd varchar2(16) not null,
+  name varchar2(10) not null,
+  reg_date DATE not null,
+  address varchar2(100) not null,
+  tel varchar(20) not null
+);
+
+insert into member(id, passwd, name, reg_date, address,tel) 
+values('aaa','aaaa','김동윤', SYSDATE,'대구시 남구 99', '010-1234-5555');
+
+commit;
+
+create table manager(
+ managerId varchar2(50)  primary key,
+ managerPasswd varchar2(16) not null
+);
+
+
+insert into manager(managerId, managerPasswd)
+values('admin','aaa');
+
+create table book(
+  book_id number(10) primary key ,   -- auto increament
+  book_kind varchar2(3) not null,
+  book_title varchar2(100) not null,
+  book_price number(10)  not null,
+  book_count number(10) not null,
+  author varchar2(40) not null,
+  publishing_com varchar2(30) not null,
+  publishing_date varchar2(15) not null,
+  book_image varchar2(50) default 'nothing.jpg',
+  book_content LONG not null,
+  discount_rate number(3) default 10,
+  reg_date date not null
+);
+
+
+create table bank(
+  account varchar2(30) not null,
+  bank varchar2(10) not null,
+  name varchar2(10) not null
+);
+
+insert into bank(account, bank, name)
+values('11111-111-11111','일은행','일번명');
+
+create table cart(
+  cart_id number(10) primary key,  --auto increament
+  buyer varchar2(50) not null,
+  book_id number(10)  not null,
+  book_title varchar2(100) not null,
+  buy_price number(10)  not null,
+  buy_count number(3)  not null,
+  book_image varchar2(50) default 'nothing.jpg'
+);
+
+
+create table buy(
+  buy_id NUMBER(19) not null ,
+  buyer varchar2(50) not null,
+  book_id varchar2(12) not null,
+  book_title varchar2(100) not null,
+  buy_price number(10)  not null,
+  buy_count number(3)  not null,
+  book_image varchar2(50) default 'nothing.jpg',
+  buy_date date not null,
+  account varchar2(50) not null,
+  deliveryName varchar2(10) not null,
+  deliveryTel varchar2(20) not null,
+  deliveryAddress varchar2(100) not null,
+  sanction varchar2(10) default '종합'
+);
+
+
+select * from book where book_kind = 100
+             and book_id between 0 and 3 order by reg_date desc;
+             
+select * from (select rownum rnum, b.* from book b where book_kind = 100 order by reg_date desc)
+    where rnum>=1 and rnum<=3;
+
+select * from (select rownum rnum, b.* from (select * from book where book_kind=100 order by reg_date desc) b )
+    where rnum>=1 and rnum<=3;
+
+select nvl(max(book_id),0)+1 from book;
+
+create table board(
+  num NUMBER(10)  primary key ,
+  writer varchar2(10) not null,
+  email varchar2(30),
+  subject varchar2(50) not null,
+  passwd varchar2(12) not null,
+  reg_date TIMESTAMP not null,
+  readcount NUMBER(10) default 0,
+  ref NUMBER(10) not null,
+  re_step NUMBER(5) not null,
+  re_level NUMBER(5) not null,
+  content LONG not null,
+  ip varchar2(20) not null
+);
