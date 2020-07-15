@@ -30,9 +30,9 @@ JSP - 책 쇼핑몰
     
     * 각 항목에 들어갔을 때   
  <div>   
-<img width="33%" src="https://user-images.githubusercontent.com/60810356/87291223-f73d0300-c539-11ea-81ba-5c6d376b312c.JPG">
-<img width="33%" src="https://user-images.githubusercontent.com/60810356/87291229-f86e3000-c539-11ea-953f-987c50b50636.JPG">
-<img width="33%" src="https://user-images.githubusercontent.com/60810356/87291233-f99f5d00-c539-11ea-8eb0-aa96480577fc.JPG">
+<img width="30%" src="https://user-images.githubusercontent.com/60810356/87291223-f73d0300-c539-11ea-81ba-5c6d376b312c.JPG">
+<img width="30%" src="https://user-images.githubusercontent.com/60810356/87291229-f86e3000-c539-11ea-953f-987c50b50636.JPG">
+<img width="30%" src="https://user-images.githubusercontent.com/60810356/87291233-f99f5d00-c539-11ea-8eb0-aa96480577fc.JPG">
 </div>
 
   + 장바구니   
