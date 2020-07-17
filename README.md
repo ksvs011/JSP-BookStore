@@ -31,7 +31,8 @@ JSP - 책 쇼핑몰
   ![사용자 구매 목록](https://user-images.githubusercontent.com/60810356/87291532-6d416a00-c53a-11ea-93b8-0c46b046e47f.JPG)
   
   
-  - 관리자 모드
+  
+- 관리자 모드
 
   + 책 등록   
   ![책등록 페이지](https://user-images.githubusercontent.com/60810356/87292092-4172b400-c53b-11ea-903a-8d1760aad63d.JPG)
