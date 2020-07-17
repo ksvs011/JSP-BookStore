@@ -5,20 +5,6 @@ JSP - 책 쇼핑몰
 
 ### 결과
 
-- 관리자 모드
-
-  + 책 등록   
-  ![책등록 페이지](https://user-images.githubusercontent.com/60810356/87292092-4172b400-c53b-11ea-903a-8d1760aad63d.JPG)
-  
-  + 등록된 책 목록   
-  ![등록된책](https://user-images.githubusercontent.com/60810356/87292098-446da480-c53b-11ea-8147-385093e0ab66.JPG)
-  
-  + 등록된 책 수정 페이지   
-  ![수정 페이지](https://user-images.githubusercontent.com/60810356/87292095-42a3e100-c53b-11ea-9b9b-6912e53b5ea7.JPG)
-  
-  + 사용자가 책을 구매 하였을 때   
-  ![관리자 주문목록](https://user-images.githubusercontent.com/60810356/87292665-19d01b80-c53c-11ea-8888-610c3b1fe626.JPG)
-
 - 사용자 모드
 
   + 메인화면   
@@ -43,3 +29,18 @@ JSP - 책 쇼핑몰
     
   + 구매목록   
   ![사용자 구매 목록](https://user-images.githubusercontent.com/60810356/87291532-6d416a00-c53a-11ea-93b8-0c46b046e47f.JPG)
+  
+  
+  - 관리자 모드
+
+  + 책 등록   
+  ![책등록 페이지](https://user-images.githubusercontent.com/60810356/87292092-4172b400-c53b-11ea-903a-8d1760aad63d.JPG)
+  
+  + 등록된 책 목록   
+  ![등록된책](https://user-images.githubusercontent.com/60810356/87292098-446da480-c53b-11ea-8147-385093e0ab66.JPG)
+  
+  + 등록된 책 수정 페이지   
+  ![수정 페이지](https://user-images.githubusercontent.com/60810356/87292095-42a3e100-c53b-11ea-9b9b-6912e53b5ea7.JPG)
+  
+  + 사용자가 책을 구매 하였을 때   
+  ![관리자 주문목록](https://user-images.githubusercontent.com/60810356/87292665-19d01b80-c53c-11ea-8888-610c3b1fe626.JPG)
